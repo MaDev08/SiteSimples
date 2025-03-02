@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --terrosos: #fff8dc;
+    --branco: #fff;
+    --chocolate: #d2691e ;
+    --preto: #000;
+}
+
+body{
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--bg);
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: var(--chocolate);
+}
+
+.anime-list {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: var(--branco);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000000cc;
+}
+
+
+.anime-item {
+    margin-bottom: 15px;
+}
+
+
+.anime-item h2 {
+    color: #555;
+}
+
+.anime-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.anime-item p {
+    color: #777;
+}
+
+.light-theme{
+   --bg: (--terrosos);
+   --fontColor: (--chocolate);
+   --btnBg: (--chocolate);
+   --btnFontColor: (--terrosos);
+}
+
+.dark-theme{
+    --bg: var(--preto);
+    --fontColor: var(--chocolate);
+    --btnBg: (--terrosos);
+    --btnFontColor: (--chocolate);
+}
+
+.btn{
+    font-size: x-large;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    color: (--btnFontColor);
+    background-color: (--btnBg);
+}
+
+.btn:focus{ outline-style: none; }
